@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CouponBridge | RMSクーポン隔週作成ツール</title>
+  <link rel="icon" href="/favicon.png" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="hero panel">
+      <div class="brandBlock">
+        <img class="brandLogo" src="/full_logo.png" alt="CouponBridge" />
+        <div>
+          <p class="eyebrow">RMS CouponAPI</p>
+          <h1>RMSクーポン隔週作成ツール</h1>
+          <p class="lead">既存クーポンから次回期間を自動取得し、店舗ごとの定番クーポンを作成します。</p>
+        </div>
+      </div>
+      <div class="heroMeta">
+        <span id="modeChip" class="chip chip-live">読み込み中</span>
+        <span id="versionChip" class="chip">-</span>
+      </div>
+    </section>
+
+    <section class="summaryGrid" aria-label="現在の状態">
+      <div class="summaryCard panel">
+        <span>店舗</span>
+        <strong id="summaryStore">-</strong>
+      </div>
+      <div class="summaryCard panel">
+        <span>次回期間</span>
+        <strong id="summaryPeriod">-</strong>
+      </div>
+      <div id="summaryAvailabilityCard" class="summaryCard panel">
+        <span>作成可否</span>
+        <strong id="summaryAvailability">確認中</strong>
+      </div>
+      <div class="summaryCard panel">
+        <span>対象件数</span>
+        <strong id="summaryCount">0件</strong>
+      </div>
+    </section>
+
+    <section class="mainGrid">
+      <section class="stepCard panel">
+        <div class="stepHeader">
+          <span class="stepNo">STEP 1</span>
+          <div>
+            <h2>店舗と期間</h2>
+            <p>作成する店舗を選び、最新クーポンから次回期間を取得します。</p>
+          </div>
+        </div>
+
+        <div class="fieldGroup">
+          <span class="labelText">店舗</span>
+          <div id="storeSegment" class="storeSegment"></div>
+        </div>
+
+        <button id="nextPeriodBtn" class="btn btn-secondary btn-wide">最新クーポンから次回期間を取得</button>
+
+        <div class="fieldGroup">
+          <label class="labelText" for="startDate">開始日</label>
+          <input id="startDate" type="date" />
+        </div>
+
+        <div class="periodBox">
+          <span>作成期間</span>
+          <strong id="periodText">-</strong>
+        </div>
+
+        <div id="issueWindowText" class="availabilityBox">作成可否を確認中...</div>
+
+        <div id="latestBox" class="latestBox hidden"></div>
+      </section>
+
+      <section class="stepCard panel">
+        <div class="stepHeader">
+          <span class="stepNo">STEP 2</span>
+          <div>
+            <h2>作成内容</h2>
+            <p>店舗ごとのテンプレートに基づいて、作成予定のクーポンを確認します。</p>
+          </div>
+        </div>
+
+        <div id="storeTemplateNote" class="templateNote">-</div>
+        <div id="templateList" class="templateGrid"></div>
+      </section>
+    </section>
+
+    <section class="stepCard panel executionCard">
+      <div class="stepHeader">
+        <span class="stepNo">STEP 3</span>
+        <div>
+          <h2>実行</h2>
+          <p>作成内容に問題がなければ、CouponAPIでクーポンを作成します。</p>
+        </div>
+      </div>
+
+      <div class="executionSummary">
+        <div><span>モード</span><strong id="execMode">-</strong></div>
+        <div><span>店舗</span><strong id="execStore">-</strong></div>
+        <div><span>作成件数</span><strong id="execCount">0件</strong></div>
+      </div>
+
+      <div class="actions">
+        <button id="dryRunBtn" class="btn btn-ghost">内容確認</button>
+        <button id="issueBtn" class="btn btn-primary">選択クーポンを作成</button>
+      </div>
+    </section>
+
+    <section class="resultPanel panel">
+      <div class="resultHeader">
+        <div>
+          <h2>結果</h2>
+          <p id="resultLead">ここに確認結果・API結果が表示されます。</p>
+        </div>
+        <button id="toggleRawBtn" class="btn btn-small btn-ghost" type="button">詳細ログを表示</button>
+      </div>
+
+      <div id="resultCards" class="resultCards emptyState">
+        実行後、成功・失敗・スキップの結果をカードで表示します。
+      </div>
+
+      <pre id="resultRaw" class="rawLog hidden">ここに詳細ログが表示されます。</pre>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

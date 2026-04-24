@@ -1,0 +1,19 @@
+{
+  "defaultStoreId": "yukaiya",
+  "stores": [
+    {
+      "id": "yukaiya",
+      "name": "ゆかい屋",
+      "templatesFile": "coupon-templates-yukaiya.json",
+      "serviceSecretEnv": "RMS_YUKAIYA_SERVICE_SECRET",
+      "licenseKeyEnv": "RMS_YUKAIYA_LICENSE_KEY"
+    },
+    {
+      "id": "kairy",
+      "name": "KAIRY",
+      "templatesFile": "coupon-templates-kairy.json",
+      "serviceSecretEnv": "RMS_KAIRY_SERVICE_SECRET",
+      "licenseKeyEnv": "RMS_KAIRY_LICENSE_KEY"
+    }
+  ]
+}

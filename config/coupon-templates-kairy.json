@@ -1,0 +1,116 @@
+{
+  "templates": [
+    {
+      "id": "qty5_20off",
+      "enabled": true,
+      "label": "5点以上購入 → 20%OFF",
+      "couponName": "【全体】5点まとめて購入→20%OFFクーポン",
+      "couponCaption": "【当社全商品】5点以上まとめてお買い上げで【20%OFF】クーポンです。",
+      "couponPayload": {
+        "issueCount": 0,
+        "itemType": 4,
+        "discountType": 2,
+        "discountFactor": 20,
+        "memberAvailMaxCount": 0,
+        "purchaseHistoryCond": { "type": 0 },
+        "multiRankCond": { "rankCond": 0 },
+        "genderCond": "NONE",
+        "ageRangeCond": { "lowerBound": 0, "upperBound": 0 },
+        "birthmonthCond": 0,
+        "multiPrefectureCond": { "prefectureCond": "NONE" },
+        "combineFlag": 0,
+        "displayFlag": 1,
+        "otherConditions": {
+          "otherCondition": {
+            "conditionTypeCode": "RS004",
+            "startValue": 5
+          }
+        }
+      }
+    },
+    {
+      "id": "qty4_15off",
+      "enabled": true,
+      "label": "4点以上購入 → 15%OFF",
+      "couponName": "【全体】4点まとめて購入→15%OFFクーポン",
+      "couponCaption": "【当社全商品】4点以上まとめてお買い上げで【15%OFF】クーポンです。",
+      "couponPayload": {
+        "issueCount": 0,
+        "itemType": 4,
+        "discountType": 2,
+        "discountFactor": 15,
+        "memberAvailMaxCount": 0,
+        "purchaseHistoryCond": { "type": 0 },
+        "multiRankCond": { "rankCond": 0 },
+        "genderCond": "NONE",
+        "ageRangeCond": { "lowerBound": 0, "upperBound": 0 },
+        "birthmonthCond": 0,
+        "multiPrefectureCond": { "prefectureCond": "NONE" },
+        "combineFlag": 0,
+        "displayFlag": 1,
+        "otherConditions": {
+          "otherCondition": {
+            "conditionTypeCode": "RS004",
+            "startValue": 4
+          }
+        }
+      }
+    },
+    {
+      "id": "qty3_10off",
+      "enabled": true,
+      "label": "3点以上購入 → 10%OFF",
+      "couponName": "【全体】3点まとめて購入→10%OFFクーポン",
+      "couponCaption": "【当社全商品】3点以上まとめてお買い上げで【10%OFF】クーポンです。",
+      "couponPayload": {
+        "issueCount": 0,
+        "itemType": 4,
+        "discountType": 2,
+        "discountFactor": 10,
+        "memberAvailMaxCount": 0,
+        "purchaseHistoryCond": { "type": 0 },
+        "multiRankCond": { "rankCond": 0 },
+        "genderCond": "NONE",
+        "ageRangeCond": { "lowerBound": 0, "upperBound": 0 },
+        "birthmonthCond": 0,
+        "multiPrefectureCond": { "prefectureCond": "NONE" },
+        "combineFlag": 0,
+        "displayFlag": 1,
+        "otherConditions": {
+          "otherCondition": {
+            "conditionTypeCode": "RS004",
+            "startValue": 3
+          }
+        }
+      }
+    },
+    {
+      "id": "qty2_5off",
+      "enabled": true,
+      "label": "2点以上購入 → 5%OFF",
+      "couponName": "【全体】2点まとめて購入→5%OFFクーポン",
+      "couponCaption": "【当社全商品】2点以上まとめてお買い上げで【5%OFF】クーポンです。",
+      "couponPayload": {
+        "issueCount": 0,
+        "itemType": 4,
+        "discountType": 2,
+        "discountFactor": 5,
+        "memberAvailMaxCount": 0,
+        "purchaseHistoryCond": { "type": 0 },
+        "multiRankCond": { "rankCond": 0 },
+        "genderCond": "NONE",
+        "ageRangeCond": { "lowerBound": 0, "upperBound": 0 },
+        "birthmonthCond": 0,
+        "multiPrefectureCond": { "prefectureCond": "NONE" },
+        "combineFlag": 0,
+        "displayFlag": 1,
+        "otherConditions": {
+          "otherCondition": {
+            "conditionTypeCode": "RS004",
+            "startValue": 2
+          }
+        }
+      }
+    }
+  ]
+}

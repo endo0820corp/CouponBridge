@@ -1,0 +1,116 @@
+{
+  "templates": [
+    {
+      "id": "10000_20off",
+      "enabled": true,
+      "label": "10000円以上購入 → 20%OFF",
+      "couponName": "【全体】10000円以上購入→20%OFFクーポン",
+      "couponCaption": "【当社全商品】10000円以上まとめてお買い上げで【20%OFF】クーポンです。",
+      "couponPayload": {
+        "issueCount": 0,
+        "itemType": 4,
+        "discountType": 1,
+        "discountFactor": 2000,
+        "memberAvailMaxCount": 0,
+        "purchaseHistoryCond": { "type": 0 },
+        "multiRankCond": { "rankCond": 0 },
+        "genderCond": "NONE",
+        "ageRangeCond": { "lowerBound": 0, "upperBound": 0 },
+        "birthmonthCond": 0,
+        "multiPrefectureCond": { "prefectureCond": "NONE" },
+        "combineFlag": 0,
+        "displayFlag": 1,
+        "otherConditions": {
+          "otherCondition": {
+            "conditionTypeCode": "RS003",
+            "startValue": 10000
+          }
+        }
+      }
+    },
+    {
+      "id": "7500_15off",
+      "enabled": true,
+      "label": "7500円以上購入 → 15%OFF",
+      "couponName": "【全体】7500円以上購入→15%OFFクーポン",
+      "couponCaption": "【当社全商品】7500円以上まとめてお買い上げで【15%OFF】クーポンです。",
+      "couponPayload": {
+        "issueCount": 0,
+        "itemType": 4,
+        "discountType": 1,
+        "discountFactor": 1125,
+        "memberAvailMaxCount": 0,
+        "purchaseHistoryCond": { "type": 0 },
+        "multiRankCond": { "rankCond": 0 },
+        "genderCond": "NONE",
+        "ageRangeCond": { "lowerBound": 0, "upperBound": 0 },
+        "birthmonthCond": 0,
+        "multiPrefectureCond": { "prefectureCond": "NONE" },
+        "combineFlag": 0,
+        "displayFlag": 1,
+        "otherConditions": {
+          "otherCondition": {
+            "conditionTypeCode": "RS003",
+            "startValue": 7500
+          }
+        }
+      }
+    },
+    {
+      "id": "5000_10off",
+      "enabled": true,
+      "label": "5000円以上購入 → 10%OFF",
+      "couponName": "【全体】5000円以上購入→10%OFFクーポン",
+      "couponCaption": "【当社全商品】5000円以上まとめてお買い上げで【10%OFF】クーポンです。",
+      "couponPayload": {
+        "issueCount": 0,
+        "itemType": 4,
+        "discountType": 1,
+        "discountFactor": 500,
+        "memberAvailMaxCount": 0,
+        "purchaseHistoryCond": { "type": 0 },
+        "multiRankCond": { "rankCond": 0 },
+        "genderCond": "NONE",
+        "ageRangeCond": { "lowerBound": 0, "upperBound": 0 },
+        "birthmonthCond": 0,
+        "multiPrefectureCond": { "prefectureCond": "NONE" },
+        "combineFlag": 0,
+        "displayFlag": 1,
+        "otherConditions": {
+          "otherCondition": {
+            "conditionTypeCode": "RS003",
+            "startValue": 5000
+          }
+        }
+      }
+    },
+    {
+      "id": "2500_5off",
+      "enabled": true,
+      "label": "2500円以上購入 → 5%OFF",
+      "couponName": "【全体】2500円以上購入→5%OFFクーポン",
+      "couponCaption": "【当社全商品】2500円以上まとめてお買い上げで【5%OFF】クーポンです。",
+      "couponPayload": {
+        "issueCount": 0,
+        "itemType": 4,
+        "discountType": 1,
+        "discountFactor": 125,
+        "memberAvailMaxCount": 0,
+        "purchaseHistoryCond": { "type": 0 },
+        "multiRankCond": { "rankCond": 0 },
+        "genderCond": "NONE",
+        "ageRangeCond": { "lowerBound": 0, "upperBound": 0 },
+        "birthmonthCond": 0,
+        "multiPrefectureCond": { "prefectureCond": "NONE" },
+        "combineFlag": 0,
+        "displayFlag": 1,
+        "otherConditions": {
+          "otherCondition": {
+            "conditionTypeCode": "RS003",
+            "startValue": 2500
+          }
+        }
+      }
+    }
+  ]
+}
