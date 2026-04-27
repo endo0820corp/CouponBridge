@@ -32,7 +32,7 @@ app.use((req, res, next) => {
 app.use(express.json({ limit: "2mb" }));
 app.use(express.static(path.join(__dirname, "..", "public")));
 
-const APP_VERSION = "pages-local-api-v7";
+const APP_VERSION = "pages-path-fixed-v8";
 
 function selectedTemplates(all: CouponTemplate[], ids: string[]): CouponTemplate[] {
   return all.filter((t) => ids.includes(t.id));

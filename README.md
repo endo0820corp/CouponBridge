@@ -1,3 +1,5 @@
+GitHub Pages path fix: docs/index.html uses relative paths for CSS/JS/logo.
+
 # CouponBridge
 
 楽天RMS CouponAPIで、店舗ごとの定番クーポンを次回2週間分として新規作成するローカルWebツールです。
