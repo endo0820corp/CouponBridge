@@ -1,5 +1,3 @@
-Brand assets updated: favicon uses symbol.png, header uses full_logo.png.
-
 # CouponBridge
 
 楽天RMS CouponAPIで、店舗ごとの定番クーポンを次回2週間分として新規作成するローカルWebツールです。
@@ -65,3 +63,33 @@ PORT=5174
 ## 注意
 
 楽天RMS CouponAPIは、1秒1リクエストまでを目安にする制約があります。このツールでは1件ごとに約1.1秒の待機を入れています。
+
+
+## GitHub Pages + ローカルAPI運用
+
+この版は、GitHub Pagesに画面だけを置き、RMS API実行はローカルPCのAPIサーバーで行えます。
+
+### ローカルAPI起動
+
+```powershell
+cd C:\dev\web\projects\CouponBridge
+npm install
+npm run api
+```
+
+GitHub Pages側の画面は `http://localhost:5174/api` に接続します。`.env` はローカルPCだけに置いてください。
+
+### GitHub Pages設定
+
+GitHubのリポジトリ画面で以下を設定します。
+
+```text
+Settings
+→ Pages
+→ Source: Deploy from a branch
+→ Branch: main
+→ Folder: /docs
+→ Save
+```
+
+数分後に `https://endo0820corp.github.io/CouponBridge/` で画面を開けます。
